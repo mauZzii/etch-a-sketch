@@ -1,3 +1,71 @@
+body {
+    font-family: "DM Mono", sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+button {
+    font-family: "DM Mono", sans-serif;
+}
+
+.header-title {
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.control-color,
+.control-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.control-color {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.control-grid {
+    align-items: center;
+}
+
+#color-changer {
+    align-self: center;
+    margin-top: 5px;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    height: 5px;
+    background: #484848;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.brush-btn,
+.rainbow-btn,
+.shader-btn,
+.erase-btn,
+.clear-grid-btn {
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 18px;
+    color: #484848;
+    border: 4px solid #484848;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
 .grid-container {
 	border: 3px solid #000000;
 	background: #FFF;
@@ -21,4 +89,8 @@
 
 .grid-border {
 	border: 0.5px solid #000000;
+}
+
+#grid-slider {
+    margin-left: auto;
 }

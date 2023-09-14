@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=DM Mono' rel='stylesheet'>
     <script src="script.js" defer></script>
     <title>Etch-A-Sketch</title>
 </head>
@@ -20,7 +21,8 @@
                 <input type="color" id="color-changer" name="color-changer" value="#000000">
             </div>
             <div class="control-grid">
-                <label for="grid-slider">Current Grid Size: <span id="grid-size-value"></span></label>
+                <label for="grid-slider">Current Grid Size:</label>
+                <span id="grid-size-value"></span>
                 <input type="range" id="grid-slider" min="5" max="50" value="5">
             </div>
             <div class="control-paint">
@@ -30,7 +32,7 @@
             </div>
             <div class="control-erase">
                 <button id="eraser" class="erase-btn">Erase</button>
-                <button id="clear-grid" class="clear-grid">Reset</button>
+                <button id="clear-grid" class="clear-grid-btn">Reset</button>
             </div>
         </section>
         <section class="sketch-area">
@@ -40,7 +42,7 @@
         </section>
     </div>
     <footer class="footer">
-        created by <a href="https://github.com/mauZzii">mauZzi</a>
+        created by <a href="https://github.com/mauZzii">mauZzii</a>
     </footer>
 </body>
 </html>
