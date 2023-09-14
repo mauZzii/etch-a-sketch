@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Etch-A-Sketch</title>
 </head>
 <body>
@@ -18,8 +20,8 @@
                 <input type="color" id="color-changer" name="color-changer" value="#000000">
             </div>
             <div class="control-grid">
-                <label for="grid-size-control">Current Grid Size: <span id="grid-size-value">5 x 5</span></label>
-                <input type="range" id="grid-size-control" min="5" max="50" value="5">
+                <label for="grid-slider">Current Grid Size: <span id="grid-size-value"></span></label>
+                <input type="range" id="grid-slider" min="5" max="50" value="5">
             </div>
             <div class="control-paint">
                 <button id="brush" class="brush-btn active">Brush</button>
@@ -33,11 +35,12 @@
         </section>
         <section class="sketch-area">
             <div class="grid-container">
+                <!--generates the grid with JS-->
             </div>
         </section>
     </div>
     <footer class="footer">
-        created by mauZzi
+        created by <a href="https://github.com/mauZzii">mauZzi</a>
     </footer>
 </body>
 </html>
