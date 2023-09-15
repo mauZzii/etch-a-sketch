@@ -69,6 +69,7 @@ input[type="range"] {
     margin-top: 10px;
 }
 
+.border-btn,
 .brush-btn,
 .rainbow-btn,
 .shader-btn,
@@ -101,7 +102,6 @@ input[type="range"] {
 	justify-content: center;
 	font-size: 18px;
 	color: white;
-    border: 0.5px solid black;
 }
 
 .grid-border {
