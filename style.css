@@ -17,10 +17,17 @@ button {
     text-align: center;
 }
 
+.main-container {
+    display: flex;
+    justify-content: center;
+}
+
 .controls {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    margin-right: 10px;
 }
 
 .control-color,
@@ -34,13 +41,23 @@ button {
     margin-bottom: 20px;
 }
 
+#color-changer {
+    align-self: center;
+    margin-top: 5px;
+}
+
 .control-grid {
     align-items: center;
 }
 
-#color-changer {
-    align-self: center;
-    margin-top: 5px;
+.control-paint {
+    display: flex;
+    flex-direction: column;
+}
+
+.control-erase {
+    display: flex;
+    flex-direction: column;
 }
 
 input[type="range"] {
@@ -93,4 +110,15 @@ input[type="range"] {
 
 #grid-slider {
     margin-left: auto;
+}
+
+.footer {
+    font-size: 12px;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    height: 30px;
+    width: 100%;
+    border-top: 4px solid #484848;
+    padding-top: 5px;
 }
